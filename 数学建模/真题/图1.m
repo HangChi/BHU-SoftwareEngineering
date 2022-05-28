@@ -1,0 +1,16 @@
+clc;
+clear;
+xlsread('1.xlsx');
+x=ans(:,1);
+y=ans(:,2);
+plot(x,y,'x');
+hold on;
+p1=polyfit(x,y,4);
+y1=polyval(p1,x);
+plot(x,y1,'r');
+p2=polyfit(x,y,6);
+y2=polyval(p2,x);
+plot(x,y2,'b');
+p3=polyfit(x,y,8);
+y3=polyval(p3,x);
+plot(x,y3,'c');
