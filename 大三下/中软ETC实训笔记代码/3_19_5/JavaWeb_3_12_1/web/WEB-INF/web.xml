@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>com.etc.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/registerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.etc.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mainServlet</servlet-name>
+        <servlet-class>com.etc.servlet.MainServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>mainServlet</servlet-name>
+        <url-pattern>/mainServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteByIdServlet</servlet-name>
+        <servlet-class>com.etc.servlet.DeleteByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteByIdServlet</servlet-name>
+        <url-pattern>/deleteByIdServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>selectByIdServlet</servlet-name>
+        <servlet-class>com.etc.servlet.SelectByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>selectByIdServlet</servlet-name>
+        <url-pattern>/selectByIdServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateByIdServlet</servlet-name>
+        <servlet-class>com.etc.servlet.UpdateByIdServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateByIdServlet</servlet-name>
+        <url-pattern>/updateByIdServlet</url-pattern>
+    </servlet-mapping>
+</web-app>

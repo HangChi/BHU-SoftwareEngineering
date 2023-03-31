@@ -1,0 +1,109 @@
+
+VNCServer服务端  VNCView客户端
+
+Windows配置Java环境
+Java              查看Java命令
+Java -version 查看JDK版本
+
+Java开发工具 MyEclipse Eclipse IDEA(版本)
+
+创建Java工程
+工程目录结构
+Java_3_7_0           项目名 
+src                       编写Java代码
+External Libraries 依赖JDK环境 rt.jar java目录
+
+开源 闭源 bug
+
+建包 com.项目名.模块名.类名
+
+main方法程序入口  psvm
+输出语句                sout
+
+树外观 -- 压缩空的中间软件包
+
+创建JavaEE工程
+Java Enterprise -- Web Application -- web.xml
+
+项目目录结构
+JavaWeb_3_7_0      项目名
+src                         编写Java代码
+External Libraries    依赖JDK环境
+web                       存放所有web资源
+WEB-INF/web.xml  总配置文件
+
+配置Tomcat服务器
+Tomcat默认端口 8080
+Tomcat默认地址 http://localhost:8080      http://10.101.58.200:8080
+Name: Tomcat 7.0.75
+HTTP port:8080
+Application context: /
+
+html5常用标签   h1 p form input
+css3   常用属性   color font-size
+js jquery
+
+框架Bootstrap
+https://v3.bootcss.com/下载用于生产环境的Bootstrap 
+全局CSS样式
+<link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.min.css"/>
+
+跳转传值
+jsp<<===>>jsp       <%%>小脚本   jsp有 html没有
+jsp<<===>>Servlet 业务逻辑
+Servlet<<===>>jsp
+Servlet<<===>>Servlet
+
+    <servlet>
+        <servlet-name>loginServlet</servlet-name>
+        <servlet-class>com.etc.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginServlet</servlet-name>
+        <url-pattern>/loginServlet</url-pattern>
+    </servlet-mapping>
+
+MVC设计模式  Model模型层 View视图层 Controller控制层
+
+alt + insert
+
+Oracle端口 1521
+Oracle安装卸载
+用户名    system    系统管理员
+密码       1234
+数据库    ORCL
+连接为    Normal
+
+system@ORCL - PL/SQL Developer
+
+工具 -- 首选项 -- 外观 -- 重置停放
+工具 -- 首选项 -- 外观 -- 重置工具栏
+工具 -- 首选项 -- 字体(浏览器 表格 编辑器 主字体)
+
+新建 -- SQL窗口
+
+<当前用户>All objects  Tables文件夹   Users文件夹
+
+创建用户etc  create user etc identified by 111111 
+赋值权限       grant connect,resource,dba to etc
+
+Scott用户默认四张表 BONUS DEPT EMP SALGRADE
+
+建表删表  增删改查
+
+JDBC连通Oracle
+1.导入Oracle驱动包    Oracle 11g ----> ojdbc6jar.rar
+   WEB-INF/lib/ojdbc6jar.rar
+   File -- Project Structure -- Modules -- Dependencies -- + -- JARs or directories -- lib 
+         --  Jar Directory
+
+2.编写驱动 
+   Class.forName("oracle.jdbc.driver.OracleDriver");
+3.编写连接
+String url = "jdbc:oracle:thin:@localhost:1521:orcl";
+4.设置账号密码
+String user = "etc";
+String password = "111111";
+5.获取连接
+Connection conn =  DriverManager.getConnection(url,user,password); 
+异常快捷键 ctrl + alt + t
